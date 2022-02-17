@@ -1,11 +1,11 @@
 
-const printName = (name = '') => {
+export const printName = (name = '') => {
     return `my name is ${name} chandra prasad`;
 }
 
-// const FirstComponent =({name}) => {
-    
-//     return <div>my name is {name}</div>
-// }
+export const addName = (name = '') => {
+    return ` ${name} rukh khan`;
+}
 
-export default printName;
+
+
