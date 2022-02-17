@@ -1,7 +1,7 @@
 import React from "react";
 
 export const printName = (name) => {
-    return `my name is ${name}`;
+    return `my name is ${name} chandra prasad`;
 }
 
 const FirstComponent =({name}) => {
