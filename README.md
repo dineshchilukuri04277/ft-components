@@ -68,3 +68,49 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+How to make a repo as a npm package & install the package to use the components in it.
+
+1) create a github account.
+2) create the repository in the github with xyz name.
+3) create the react application with xyz name.
+4) push the react application into the github repo.
+5) refer this link https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry 
+6) create a Personal access token.
+    a) click on profile icon => Settings => Developer Setting => Personal Acess token => Generate new token.
+    b) save the access token securely for future use.
+7) create a .npmrc file in the same folder where the react app is created.
+8)  add //npm.pkg.github.com/:_authToken=PAT in the .npmrc file.
+9) update project name (xyz) in the package.json to @owner/xyz.
+10) add the below code in package.json.
+ 
+ "repository": {
+    "url": "git://github.com/owner/xyz.git"
+  }
+
+11) create .npmrc file in the recat application (xyz)
+12) push all the changes into github
+13 enter the command npm publish to push the repository as npm package.
+    a) it will ask the below things
+        > Username: USERNAME
+        > Password: TOKEN
+        > Email: PUBLIC-EMAIL-ADDRESS
+project will be pushed as npm package into the github repository.
+
+14) check the package will be available in the github repo.
+15) if we want to install this package in another project as library we have to create the .npmrc file and include the below code
+
+@owner:registry=https://npm.pkg.github.com
+
+16) install the package by entering the command npm install package-name.
+
+package will be installed and added to the node modules.
+
+import the package and use it.
+
+
+
+
+
+
+
