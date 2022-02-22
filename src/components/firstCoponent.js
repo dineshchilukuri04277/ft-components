@@ -1,11 +1,10 @@
 
-export const printName = (name = '') => {
-    return `my name is ${name} chandra prasad`;
+import React from "react";
+
+const FirstComponent = (name) => {
+    return <div>{name}</div>
 }
 
-export const addName = (name = '') => {
-    return ` ${name} rukh khan`;
-}
-
+export default FirstComponent;
 
 
