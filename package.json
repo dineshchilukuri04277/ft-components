@@ -1,6 +1,6 @@
 {
   "name": "@dineshchilukuri04277/frontier-shared-components",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "main": "dist/ImageCard.js",
   "module": "dist/ImageCard.js",
