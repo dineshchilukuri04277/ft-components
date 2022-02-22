@@ -2,8 +2,8 @@
   "name": "@dineshchilukuri04277/frontier-shared-components",
   "version": "0.1.7",
   "private": false,
-  "main": "dist/ImageCard.js",
-  "module": "dist/ImageCard.js",
+  "main": "dist",
+  "module": "dist",
   "files": [
     "dist",
     "README.md"
@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "babel ./src/components -d dist --copy-files"
+    "publish:npm": "babel ./src -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": [
